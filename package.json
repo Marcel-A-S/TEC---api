@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "api-alunos",
+  "version": "1.0.0",
+  "description": "API utilizando nodeJs, express e banco de dados MySQL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcel-A-S/TEC---api.git"
+  },
+  "author": "Marcelo Antônio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcel-A-S/TEC---api/issues"
+  },
+  "homepage": "https://github.com/Marcel-A-S/TEC---api#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
