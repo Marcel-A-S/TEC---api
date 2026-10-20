@@ -42,8 +42,6 @@ app.delete('/alunos/:id', (req, res) =>{
     res.send('Deletar um aluno!')
 });
 
-
-
 /* SERVIDOR */
 app.listen(porta, () => {
      console.log(`Servidor ouvindo na porta ${porta}`);
