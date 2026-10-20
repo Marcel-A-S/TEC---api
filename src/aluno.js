@@ -42,5 +42,25 @@ function inserir(aluno, res){
        })
 }                                              
 
+   // Exibindo UM aluno
+   function lerUM(id, res){
+        const sql = "SELECT * FROM alunos WHERE id= ?";
 
-export { ler };
+        conexao.query(sql, id, (erro, resultado) => {
+            if (resultado.length === 0){
+                res.status(204).res.end();
+                return;
+            }
+
+            if(erro){
+                res.status(400).jsoin(erro.code);
+            } else {
+                res.status(200).json(resultado[0]);
+            }
+        });
+   }     
+
+
+
+
+export { ler, inserir, lerUM };
