@@ -1,19 +1,19 @@
 import mysql2 from 'mysql2';
 
 const conexao = mysql2.createConnection({
-    host : 'localhost',
-    user : 'root',
+    host : '192.185.215.58',
+    user : 'kuart612_TodoMundoPEN',
     password : 'senacpenha',
-    database : 'escola-api'
+    database : 'kuart612_APINPenha'
 });
 
 // cocexao.connect();
 
 conexao.connect( erro => {
     if(erro){
-        console.erro(`Erro ao conectar: ${erro.message}`); // Exibir mensagem de erro amigavel.
-    } else{
-        console.log('Banco de dados conectado com sucesso!');
+        console.error(`Erro ao conectar: ${erro.message}`); // Exibir mensagem de erro amigavel.
+    } else {
+        console.log(`Banco conectado em ${conexao.config.host}`);
     }
 });
 
