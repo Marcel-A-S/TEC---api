@@ -21,7 +21,9 @@ app.use(cors());
 /* ROTAS */
 //configurando rota para inicio da aplicação
 app.get('/', function(req, res){
-    res.send(`API de alunos com nodeJS, express e MySQL.`);
+   // res.send(`API de alunos com nodeJS, express e MySQL.`);
+   res.redirect('https://marcel-a-s-2210779.postman.co/documentation/59142795-a090d9dc-46c4-411e-9387-c264131335e7/publish?workspaceId=fc49ef7d-72f0-45a5-81be-78347a569f3c&authFlowId=65961f0b-0244-428a-b0d6-98d7a4641666&_pmt=pmMTc5MDI1MDI3MjgzMQ%253D%253D%257CPM.MjAyNi0wOS0yNFQxMTo0NDozMi44MzFa');
+
         
 }); 
 
